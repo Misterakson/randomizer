@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+
+
+<!--
+Вставска случайных символов в текст
+-->
+
+<form method="post" action="random.php">
+    <p><label for="text_symb">Добавление случайных символов</label></p>
+    <p><textarea name="symb_text" rows="30" cols="70" id="text_symb"></textarea></p>
+    <p><input type="submit" value="Send"></p>
+</form>
+
+<div>
+    <?php
+        if(isset($result)){
+            echo $result;
+        }
+    ?>
+</div>
+
+
+
+</body>
+</html>
